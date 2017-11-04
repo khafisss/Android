@@ -41,7 +41,7 @@
                     android:layout_width="@dimen/img_weather_width"
                     android:layout_height="@dimen/img_weather_height"
                     android:layout_gravity="center_horizontal"
-                    android:src="@mipmap/ic_launcher" />
+                    android:src="@drawable/cloud" />
 
                 <TextView
                     android:id="@+id/weather_desc"

@@ -7,5 +7,52 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cuaca hari ini"
-        android:textSize="24sp"/>
+        android:textSize="24sp"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/weather_item_images"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/rainy"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+            <TextView
+                android:id="@+id/weather_item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hari ini 11 November 2017"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/weather_item_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hari Hujan"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/weather_item_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="9dp"
+            android:gravity="center"
+            android:text="18'C"
+            android:textColor="#5caed7"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
 </android.support.v7.widget.CardView>
